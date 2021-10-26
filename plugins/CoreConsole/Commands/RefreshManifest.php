@@ -87,14 +87,12 @@ class RefreshManifest extends ConsoleCommand
                     }
                 }
             }
-            
         }
 
         foreach ($fileMismatch as $path => $props) {
             $files[$path][0] =  $props["size"];
             $files[$path][1] =  $props["md5"];
         }
-
 
         $prefix = implode("\n", array(
             "<?php",

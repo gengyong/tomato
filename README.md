@@ -1,4 +1,5 @@
-# This is policy correction version of Matomo, fix legal compliance issues in China.
+# Tomato
+*Tomato is a policy correction fork of Matomo, it fixs legal compliance issues in China.*
 
 # Matomo (formerly Piwik) - matomo.org
 
