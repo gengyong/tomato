@@ -1,13 +1,10 @@
+# This is policy correction version of Matomo, fix legal compliance issues in China.
+
 # Matomo (formerly Piwik) - matomo.org
 
 [![Latest Stable Version](https://poser.pugx.org/matomo/matomo/v/stable)](https://matomo.org/download/)
 [![Latest Unstable Version](https://poser.pugx.org/matomo/matomo/v/unstable)](https://builds.matomo.org/)
 [![License](https://poser.pugx.org/piwik/piwik/license)](https://matomo.org/free-software/)
-
-## Code Status
-
-[![Build Status](https://travis-ci.com/matomo-org/matomo.svg?branch=4.x-dev)](https://travis-ci.com/matomo-org/matomo/branches)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/matomo-org/matomo.svg)](http://isitmaintained.com/project/matomo-org/matomo "Percentage of issues still open")
 
 ## Description
 
