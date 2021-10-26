@@ -17,7 +17,7 @@
 
             <img src="{{ visitor.getColumn('countryFlag') }}"/>
             <ul class="details">
-                <li>{{ 'UserCountry_Country'|translate }}: {{ visitor.getColumn('country') }}</li>
+                <li>{{ 'UserCountry_Country'|translate }}({{ 'UserCountry_Region'|translate }}): {{ visitor.getColumn('country') }}</li>
                 {% if visitor.getColumn('region') %}<li>{{ 'UserCountry_Region'|translate }}: {{ visitor.getColumn('region') }}</li>{% endif %}
                 {% if visitor.getColumn('city') %}<li>{{ 'UserCountry_City'|translate }}: {{ visitor.getColumn('city') }}</li>{% endif %}
                 {% if visitor.getColumn('language') %}<li>{{ 'UserLanguage_BrowserLanguage'|translate }}: {{ visitor.getColumn('language') }}</li>{% endif %}

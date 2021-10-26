@@ -34,7 +34,7 @@ class GenerateIntl extends ConsoleCommand
 
     public function isEnabled()
     {
-        return true;//Development::isEnabled();
+        return Development::isEnabled();
     }
 
     protected function configure()

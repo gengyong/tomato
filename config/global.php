@@ -118,6 +118,7 @@ return array(
         'misc/package/WebAppGallery/*.xml',
         'misc/package/WebAppGallery/install.sql',
         'plugins/ImageGraph/fonts/unifont.ttf',
+        'plugins/CoreConsole/Commands/RefreshManifest.php',
         'plugins/*/config/tracker.php',
         'plugins/*/config/config.php',
         'vendor/autoload.php',
