@@ -708,7 +708,10 @@ $GEOIP_REGION_NAME = array(
         "30" => "Guangdong",
         "31" => "Hainan",
         "32" => "Sichuan",
-        "33" => "Chongqing"
+        "33" => "Chongqing",
+        "34" => "Taiwan",
+        "35" => "Hong Kong",
+        "36" => "Macao"
     ),
     "CO" => array(
         "01" => "Amazonas",

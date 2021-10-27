@@ -142,8 +142,17 @@ function getLegacyRegionNameFromCodes($countryCode, $regionCode)
     $regionCode = strtoupper($regionCode);
 
     // ensure tibet is shown as region of china
-    if ($countryCode == 'TI' && $regionCode == '1') {
+    if ($countryCode == 'TI') {
         $regionCode = '14';
+        $countryCode = 'CN';
+    } else if ($countryCode == 'TW') {
+        $regionCode = '34';
+        $countryCode = 'CN';
+    } else if ($countryCode == 'HK') {
+        $regionCode = '35';
+        $countryCode = 'CN';
+    } else if ($countryCode == 'MO') {
+        $regionCode = '36';
         $countryCode = 'CN';
     }
 

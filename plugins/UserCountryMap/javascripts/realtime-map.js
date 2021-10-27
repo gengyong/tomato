@@ -539,6 +539,9 @@
                     },
                     title: function (d) {
                         // return the country name for educational purpose
+                        if (d.name.toLowerCase() == 'taiwan') {
+                            return d.name + ', Province of China';
+                        }
                         return d.name;
                     }
                 });

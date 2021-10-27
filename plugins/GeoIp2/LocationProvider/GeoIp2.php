@@ -209,6 +209,15 @@ abstract class GeoIp2 extends LocationProvider
         if ($countryCode == 'TI') {
             $countryCode = 'CN';
             $fipsRegionCode = '14';
+        } else if ($countryCode == 'TW') {
+            $countryCode = 'CN';
+            $fipsRegionCode = '34';
+        } else if ($countryCode == 'HK') {
+            $countryCode = 'CN';
+            $fipsRegionCode = '35';
+        } else if ($countryCode == 'MO') {
+            $countryCode = 'CN';
+            $fipsRegionCode = '36';
         }
         $isoRegionCode = $returnOriginalIfNotFound ? $fipsRegionCode : '';
         if (!empty($fipsRegionCode) && !empty($mapping[$countryCode][$fipsRegionCode])) {
