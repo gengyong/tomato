@@ -12,7 +12,7 @@
                 <span style="display:none;" class="serverTimestamp">{{ visitor.getColumn('serverTimestamp')|raw }}</span>
                 {{ postEvent('Live.visitorLogWidgetViewBeforeVisitInfo', visitor) }}
                 {% set year = visitor.getColumn('serverTimestamp')|date('Y') %}
-                <span class="realTimeWidget_datetime">{{ visitor.getColumn('serverDatePretty')|replace({(year): ' '}) }} - {{ visitor.getColumn('serverTimePretty') }} {% if visitor.getColumn('visitDuration') > 0 %}({{ visitor.getColumn('visitDurationPretty')|raw }}){% endif %}</span>
+                <span class="realTimeWidget_datetime">{{ visitor.getColumn('serverDatePretty') }} - {{ visitor.getColumn('serverTimePretty') }} {% if visitor.getColumn('visitDuration') > 0 %}({{ visitor.getColumn('visitDurationPretty')|raw }}){% endif %}</span>
                 {% if visitor.getColumn('userId')|default(false) is not empty %}
                   &nbsp;  <a class="visits-live-launch-visitor-profile rightLink" title="{{ 'Live_ViewVisitorProfile'|translate }} {% if visitor.getColumn('userId') is not empty %}{{ visitor.getColumn('userId') }}{% endif %}" data-visitor-id="{{ visitor.getColumn('visitorId') }}">
                         <span>{{ visitor.getColumn('userId')|rawSafeDecoded}}</span>
